@@ -141,15 +141,7 @@ Each model's noise profile lives in `data/models/<model>.json`. Edit these files
     "accel_fs_g": 8.0,
     "gyro_fs_dps": 2000.0,
     "odr_hz": 104.0,
-    "vibration": true,
-    "accel_white_std": 0.05,
-    "gyro_white_std": 0.003,
-    "floor_noise_sigma": 1.5,
-    "g_sensitivity": 0.01,
-    "tau_a": 2000.0,
-    "tau_g": 2000.0,
-    "accel_bias_sigma": 0.04,
-    "gyro_bias_sigma": 0.003
+    "vibration": true
 }
 ```
 
@@ -159,16 +151,8 @@ Each model's noise profile lives in `data/models/<model>.json`. Edit these files
 | `gyro_fs_dps` | Gyroscope full-scale range (deg/s) |
 | `odr_hz` | Output data rate (Hz) |
 | `vibration` | Enable structural vibration model |
-| `accel_white_std` | Accelerometer white noise std (m/s²) |
-| `gyro_white_std` | Gyroscope white noise std (rad/s) |
-| `floor_noise_sigma` | Vibration floor noise amplitude |
-| `g_sensitivity` | Gyro sensitivity to vibration |
-| `tau_a` | Accelerometer bias time constant (s) — higher = slower drift |
-| `tau_g` | Gyroscope bias time constant (s) — higher = slower drift |
-| `accel_bias_sigma` | Accelerometer bias diffusion magnitude |
-| `gyro_bias_sigma` | Gyroscope bias diffusion magnitude |
 
-> Config changes take effect the next time you place a sensor. Delete and re-place the prim to apply new values.
+> Config changes take effect the next time you place a sensor. Delete and re-place the prim to apply new values. All internal noise parameters (bias drift, white noise, quantization) are fixed in the C++ engine and not user-configurable.
 
 ### Adding a New Sensor Model
 
