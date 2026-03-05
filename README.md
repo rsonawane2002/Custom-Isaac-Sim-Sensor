@@ -72,9 +72,10 @@ cd Custom-IsaacSim-Sensor
 
 ### Step 2 — Place the extension in your Isaac Sim extensions folder
 
-Copy the repo contents into your Isaac Sim extensions directory:
+Create a Sim2Real Sensor directory, and copy the repo contents into your Isaac Sim extensions directory:
 
 ```bash
+mkdir -p /path/to/isaac-sim/exts/sim2real.imu.sensor
 cp -r . /path/to/isaac-sim/exts/sim2real.imu.sensor/
 ```
 
