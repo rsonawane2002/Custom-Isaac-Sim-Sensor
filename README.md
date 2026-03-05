@@ -66,7 +66,7 @@ Custom-IsaacSim-Sensor/
 ### Step 1 — Clone the repository
 
 ```bash
-git clone https://github.com/rsonawane2002/Custom-IsaacSim-Sensor.git
+git clone https://github.com/rsonawane2002/Custom-Isaac-Sim-Sensor.git
 cd Custom-IsaacSim-Sensor
 ```
 
